@@ -11,76 +11,107 @@ html, body {
     height: 800px;
     
 }
-.container div {
+
+
+/* classes to assign to div blocks to color them and give borders */
+.white {
+    background-color: white;
+    
+}
+.black {
+    background-color: black;
+
+}
+.yellow {
+    background-color: yellow;
+
+}
+.blue {
+    background-color: blue;
+
+}
+.red {
+    background-color: red;
+
+}
+.white, .black, .yellow, .blue, .red {
     border-style: solid;
     border-width: 5px;
     border-color: gray;
 }
-#column1 {
+
+
+
+/* classes to assign to div blocks to control flex and spacing */
+.displayflex {
+    display: flex;
+}
+.flexgrow1 {
+    flex-grow: 1;
+}
+.flexgrow2 {
     flex-grow: 2;
+}
+.flexgrow3 {
+    flex-grow: 3;
+}
+.flexgrow4 {
+    flex-grow: 4;
+}
+.flexgrow5 {
+    flex-grow: 5;
+}
+.flexgrow6 {
+    flex-grow: 6;
+}
+
+
+/* styling for column 1 */
+#column1 {
+    border-width: 0;
+    flex-direction: column;
+}
+#column1>div {
+    display: flex;
+    flex-direction: row;
     border: 0;
 }
 
+
+/* styling for column 2 */
 #column2 {
-    flex-grow: 1;
-    display: flex;
     flex-direction: column;
     border-width: 0;
 }
 #c2A, #c2D {
     flex-grow: 1;
 }
-#c2B, #c2C, #c2E, #c2F {
-    flex-grow: 2;
-}
 #c2C {
-    display: flex;
     flex-direction: row;
     border: 0;
 }
-#c2C>div {
-    flex-grow: 1;
-}
 
+
+/* styling for column 3 */
 #column3 {
-    flex-grow: 1;
-    display: flex;
     flex-direction: column;
-    border: 0;
-}
-#c3C, #c3F {
-    flex-grow: 1;
-}
-#c3A, #c3B, #c3D, #c3E {
-    flex-grow: 2;
+    border-width: 0;
 }
 #c3D, #c3F {
+    flex-direction: row;
+    border: 0;
+}
+
+
+/* styling for column 4 */
+#column4 {
+    border-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+#column4>div {
     display: flex;
     flex-direction: row;
     border: 0;
 }
-#c3D>div, #c3F>div  {
-    flex-grow: 1;
-}
 
-
-#column4 {
-    flex-grow: 2;
-    border: 0;
-}
-
-.white {
-    background-color: white;
-}
-.black {
-    background-color: black;
-}
-.yellow {
-    background-color: yellow;
-}
-.blue {
-    background-color: blue;
-}
-.red {
-    background-color: red;
-}
