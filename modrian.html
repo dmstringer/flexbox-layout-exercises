@@ -5,88 +5,139 @@
     <title>Piet Mondrian Painting</title>
 </head>
 <body>
-    <div class="container">
-        <div id="column1" class="displayflex flexgrow2">
-            <div class="displayflex flexgrow1" id="c1A">
+    <div class="container displayflex">
+        <!-- column 1's structure, there are 4 rows -->
+        <div id="column1" class="displayflexcol flexgrow2">
+            <!-- row 1 -->
+            <div class="displayflex flexgrow1">
                 <div class="white flexgrow3"></div>
                 <div class="white flexgrow5"></div>
             </div>
-            <div class="displayflex flexgrow2" id="c1B">
-                <div class="white flexgrow2"></div>
+            <!-- row 2 -->
+            <div class="displayflex flexgrow4">
+                <div class="flexgrow2 displayflexcol">
+                    <div class="white flexgrow1"></div>
+                    <div class="white flexgrow1" id="cheatcol1A"></div>
+                </div>
                 <div class="red flexgrow6"></div>
             </div>
-            <div class="displayflex flexgrow2" id="c1C">
-                <div class="white flexgrow2"></div>
-                <div class="red flexgrow6"></div>
+            <!-- row 3 -->
+            <div class="displayflex flexgrow2">
+                <div class="flexgrow2 displayflexcol">
+                    <div class="white flexgrow1" id="cheatcol1B" style="padding-right: 4px;"></div>
+                    <div class="yellow flexgrow1" id="cheatcol1C"></div>
+                </div>
+                <div class="flexgrow6 displayflex">
+                    <div class="black flexgrow1"></div>
+                    <div class="displayflexcol flexgrow1">
+                        <div class="white flexgrow1"></div>
+                        <div class="white flexgrow1"></div>
+                    </div>
+                </div>
             </div>
-            <div class="displayflex flexgrow1" id="c1D">
-                <div class="white flexgrow2"></div>
-                <div class="black flexgrow3"></div>
-                <div class="white flexgrow3"></div>
-            </div>
-            <div class="displayflex flexgrow2" id="c1E">
-                <div class="yellow flexgrow2"></div>
-                <div class="black flexgrow3"></div>
-                <div class="white flexgrow3"></div>
-            </div>
-            <div class="displayflex flexgrow2" id="c1F">
-                <div class="white flexgrow5"></div>
-                <div class="yellow flexgrow3"></div>
+            <!-- row 4 -->
+            <div class="displayflex flexgrow3">
+                <div class="displayflexcol flexgrow5">
+                    <div class="displayflex flexgrow2">
+                        <div class="yellow flexgrow2" id="cheatcol1D" style="padding-right: 7px;"></div>
+                        <div class="white flexgrow3"></div>
+                    </div>
+                    <div class="white flexgrow1"></div>
+                </div>
+                <div class="displayflexcol flexgrow3">
+                    <div class="black flexgrow1"></div>
+                    <div class="displayflex flexgrow2">
+                        <div class="yellow flexgrow1"></div>
+                        <div class="white flexgrow1"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-
-        <div id="column2" class="displayflex flexgrow1">
-            <div class="yellow flexgrow1" id="c2A"></div>
-            <div class="yellow flexgrow2" id="c2B"></div>
-            <div class="displayflex flexgrow2" id="c2C">
-                <div class="white flexgrow1" id="c2C1"></div>
-                <div class="white flexgrow1" id="c2C2"></div>
+        <!-- column 2's structure, there are 6 rows -->
+        <div id="column2" class="displayflexcol flexgrow1">
+            <!-- row 1 -->
+            <div class="yellow flexgrow1"></div>
+            <!-- row 2 -->
+            <div class="yellow flexgrow2"></div>
+            <!-- row 3 -->
+            <div class="displayflex flexgrow2">
+                <div class="white flexgrow1"></div>
+                <div class="white flexgrow1"></div>
             </div>
-            <div class="white flexgrow1" id="c2D"></div>
-            <div class="blue flexgrow2" id="c2E"></div>
-            <div class="red flexgrow2" id="c2F"></div>
+            <!-- row 4 -->
+            <div class="white flexgrow1"></div>
+            <!-- row 5 -->
+            <div class="blue flexgrow2"></div>
+            <!-- row 6 -->
+            <div class="red flexgrow2"></div>
         </div>
 
-        <div id="column3" class="displayflex flexgrow1">
-            <div class="blue flexgrow2" id="c3A"></div>
-            <div class="red flexgrow2" id="c3B"></div>
-            <div class="white flexgrow1" id="c3C"></div>
-            <div class="displayflex flexgrow2" id="c3D">
+        <!-- column 3's structure, there are 6 rows -->
+        <div id="column3" class="displayflexcol flexgrow1">
+            <!-- row 1 -->
+            <div class="blue flexgrow2"></div>
+            <!-- row 2 -->
+            <div class="red flexgrow2"></div>
+            <!-- row 3 -->
+            <div class="white flexgrow1"></div>
+            <!-- row 4 -->
+            <div class="displayflex flexgrow2">
                 <div class="white flexgrow1"></div>
                 <div class="white flexgrow1"></div>
             </div>
-            <div class="yellow flexgrow2" id="c3E"></div>
-            <div  class="displayflex flexgrow1" id="c3F">
+            <!-- row 5 -->
+            <div class="yellow flexgrow2"></div>
+            <!-- row 6 -->
+            <div  class="displayflex flexgrow1">
                 <div class="white flexgrow1"></div>
                 <div class="black flexgrow1"></div>
             </div>
         </div>
 
-        <div id="column4" class="displayflex flexgrow2">
-            <div class="displayflex flexgrow2" id="c4A">
-                <div class="yellow flexgrow3"></div>
-                <div class="white flexgrow5"></div>
+        <!-- column 4's structure, there are 4 rows -->
+        <div id="column4" class="displayflexcol flexgrow2">
+            <!-- row 1 -->
+            <div class="displayflex flexgrow3">
+                <div class="displayflexcol flexgrow3">
+                    <div class="displayflex flexgrow1">
+                        <div class="yellow flexgrow1"></div>
+                        <div class="black flexgrow1"></div>
+                    </div>
+                    <div class="yellow flexgrow1"></div>
+                    <div class="black flexgrow1"></div>
+                </div>
+                <div class="displayflexcol flexgrow5">
+                    <div class="white flexgrow1"></div>
+                    <div class="displayflex flexgrow2">
+                        <div class="white flexgrow3"></div>
+                        <div class="yellow flexgrow2" id="cheatcol4A" style="padding-left: 6px;"></div>
+                    </div>
+                </div>
             </div>
-            <div class="displayflex flexgrow2" id="c4B">
-                <div class="yellow flexgrow3"></div>
-                <div class="white flexgrow3"></div>
-                <div class="yellow flexgrow2"></div>
-            </div>
-            <div class="displayflex flexgrow1" id="c4C">
-                <div class="white flexgrow3"></div>
+            <!-- row 2 -->
+            <div class="displayflex flexgrow2">
+                <div class="displayflexcol flexgrow3">
+                    <div class="white flexgrow1"></div>
+                    <div class="white flexgrow1"></div>
+                </div>
                 <div class="black flexgrow3"></div>
-                <div class="white flexgrow2"></div>
+                <div class="displayflexcol flexgrow2">
+                    <div class="yellow flexgrow1" id="cheatcol4B"></div>
+                    <div class="white flexgrow1" id="cheatcol4C" style="padding-left: 3px;"></div>
+                </div>
             </div>
-            <div class="displayflex flexgrow2" id="c4D">
+            <!-- row 3 -->
+            <div class="displayflex flexgrow4">
                 <div class="blue flexgrow6"></div>
-                <div class="white flexgrow2"></div>
+                <div class="displayflexcol flexgrow2">
+                    <div class="white flexgrow1"  id="cheatcol1D"></div>
+                    <div class="white flexgrow1"></div>
+                </div>
             </div>
-            <div class="displayflex flexgrow2" id="c4E">
-                <div class="blue flexgrow6"></div>
-                <div class="white flexgrow2"></div>
-            </div>
-            <div class="displayflex flexgrow1" id="c4F">
+            <!-- row 4 -->
+            <div class="displayflex flexgrow1">
                 <div class="white flexgrow5"></div>
                 <div class="white flexgrow3"></div>
             </div>

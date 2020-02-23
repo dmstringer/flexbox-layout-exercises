@@ -5,34 +5,26 @@ html, body {
     border-style: solid;
     border-width: 5px;
     border-color: gray;
-    display: flex;
-    flex-direction: row;
     width: 1200px;
     height: 800px;
     
 }
 
-
-/* classes to assign to div blocks to color them and give borders */
+/* classes to assign to div blocks for background colors and give borders */
 .white {
     background-color: white;
-    
 }
 .black {
     background-color: black;
-
 }
 .yellow {
     background-color: yellow;
-
 }
 .blue {
     background-color: blue;
-
 }
 .red {
     background-color: red;
-
 }
 .white, .black, .yellow, .blue, .red {
     border-style: solid;
@@ -40,11 +32,13 @@ html, body {
     border-color: gray;
 }
 
-
-
 /* classes to assign to div blocks to control flex and spacing */
 .displayflex {
     display: flex;
+}
+.displayflexcol {
+    display: flex;
+    flex-direction: column;
 }
 .flexgrow1 {
     flex-grow: 1;
@@ -65,53 +59,18 @@ html, body {
     flex-grow: 6;
 }
 
-
-/* styling for column 1 */
-#column1 {
-    border-width: 0;
-    flex-direction: column;
+/* styling for the cheats on column 1 */
+#cheatcol1A, #cheatcol1C {
+    border-bottom: 0px;
 }
-#column1>div {
-    display: flex;
-    flex-direction: row;
-    border: 0;
+#cheatcol1B, #cheatcol1D {
+    border-top: 0px;
 }
 
-
-/* styling for column 2 */
-#column2 {
-    flex-direction: column;
-    border-width: 0;
+/* styling for the cheats on column 4 */
+#cheatcol4A, #cheatcol4C {
+    border-bottom: 0px;
 }
-#c2A, #c2D {
-    flex-grow: 1;
+#cheatcol4B, #cheatcol4D {
+    border-top: 0px;
 }
-#c2C {
-    flex-direction: row;
-    border: 0;
-}
-
-
-/* styling for column 3 */
-#column3 {
-    flex-direction: column;
-    border-width: 0;
-}
-#c3D, #c3F {
-    flex-direction: row;
-    border: 0;
-}
-
-
-/* styling for column 4 */
-#column4 {
-    border-width: 0;
-    display: flex;
-    flex-direction: column;
-}
-#column4>div {
-    display: flex;
-    flex-direction: row;
-    border: 0;
-}
-
